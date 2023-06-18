@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Iniciar sesión</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css"/>
+    <link rel="stylesheet" media="all" href="style2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<style type="text/css">
+/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+/* End Fonts */
+/* Start Global rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* End Global rules */
+
+/* Start body rules */
+body {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #f37a7a 100%);
+background-image: linear-gradient(to top, #85d7f7 0%, #fa7b7b 100%);
+background-attachment: fixed;
+  background-repeat: no-repeat;
+
+    font-family: 'Vibur', cursive;
+/*   the main font */
+    font-family: 'Abel', sans-serif;
+opacity: .95;
+/* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+}
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||||||||*/
+/* //////////////////////////////////////////// */
+
+
+
+
+/* End body rules */
+
+/* Start form  attributes */
+form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #66ffd1 50%, #ff8080 50%);
+}
+/* form Container */
+form .con {
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+}
+
+/* the header form form */
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+/* Login title form form */
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+}
+/*  A welcome message or an explanation of the login form */
+header p {letter-spacing: 0.05em;}
+
+
+
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+
+/* Show/hide password Font Icon */
+#eye {
+    background: #fff;
+    color: #333;
+  
+    margin: 5.9px 0 0 0;
+    margin-left: -20px;
+    padding: 15px 9px 19px 0px;
+    border-radius: 0px 5px 5px 0px;
+  
+    float: right;
+    position: relative;
+    right: 1%;
+    top: -.2%;
+    z-index: 5;
+    
+    cursor: pointer;
+}
+/* inputs form  */
+input[class="form-input"]{
+    width: 240px;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #6f90dd;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+input[id="txt-input"] {width: 250px;}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+
+/* input[type="text"] {min-width: 250px;} */
+/* buttons  */
+button {
+    display: inline-block;
+    color: #7676db;
+  
+    width: 280px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+/*       Forgot Password button FAF3DD  */
+.frgt-pass {background: transparent;}
+
+/*     Sign Up button  */
+.sign-up {background: #B8F2E6;}
+
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+
+
+
+
+
+    
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #26004d;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 10;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #26004d;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #26004d;
+      color: #fff;
+    }
+
+    footer{
+  color: #fff;
+  background-color: #26004d;
+  height: 250px
+}
+
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+ 
+
+body {  
+  background: #f6f8fa;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+.faq-container {    
+  max-width: 800px;
+  margin: 50px auto 0 auto;
+  padding: 2rem;
+}
+.faq-container h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #364f6b;
+}
+details { 
+  background-color: #f6f8fa;
+  width: 100%;
+  margin-bottom: 1rem;   
+  border-radius: 8px;  
+  border: 1px solid #d8e0e9;
+  color: #364f6b;
+  position: relative;  
+}
+details summary {  
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+details p {
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  background: #f6f8fa;
+  border-left: 2px solid #364f6b;
+}
+
+details:hover,
+details[open] {
+  box-shadow: 5px 5px 15px #d9d9d9;
+}
+
+details[open] {
+  background: #ffffff;
+}
+
+details[open] summary {
+  font-weight: 600;
+}
+
+details summary::before {
+  position: absolute;
+    content: "👇";    
+    font-size: 1.75rem;
+    top: 10px;
+    right: 16px;  
+}
+
+details[open] summary::before {
+  -webkit-animation: rotate 0.6s ease-in-out both;
+          animation: rotate-emoji 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-emoji {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+
+
+img.izquierda {
+  float: left;
+}
+
+img.derecha {
+  float: right;
+}
+
+
+
+div.a{
+    text-align: center;
+}
+
+
+
+body {
+  position: relative;
+  margin: 0;
+}
+.sect {
+  width: 100%;
+  min-height: 200px;
+}
+
+#sect1 {
+  background-color: #ffffff8a;
+  color: #333;
+}
+
+#sect2 {
+  background-color: rgba(255, 255, 255, 0.49);
+  color: #333;
+  height: 90px;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+h1 {
+  margin: 0;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+h2 {
+  margin: 0;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body {  
+  background-color: HoneyDew;
+  font-family: 'Fredoka One', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.text-container h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+.text-container .text-pattern {  
+  color: transparent;
+  background-color: #240863;
+  background-image: repeating-linear-gradient(45deg,    transparent, transparent 25px,        rgba(67, 49, 236, 0.5) 25px, rgba(255,255,255,.5) 50px);
+   -webkit-background-clip: text;
+    background-clip: text;   
+  animation: color 50s linear infinite; 
+  background-size: 200%;  
+  -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+@keyframes color {
+  from { 
+    background-position: 0% 50%;
+  }
+  to { 
+    background-position: 100% 50%; 
+  }
+}
+
+
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+
+
+hr {border: 0;
+    height: 24px; 
+    box-shadow: inset 0 22px 12px -12px rgb(24, 2, 104); 
+    color: rgb(24, 2, 104); 
+    text-align: center;
+}
+hr:after {
+    content:"\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605"; 
+    font-size: 14px;
+    color: #eee;
+    }
+</style>
+<script language="JavaScript" type='text/javascript'>
+    $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+
+
+
+
+$(function(){
+  $('.one form .btn').on('click',function(){ 
+     $(this).parents('.one').animate({
+          top : '-500px'
+        },500);
+    
+                                          $(this).parents('.one').siblings('.two').
+     animate({
+          top : '0px'
+        },500);
+    return false;
+  });
+
+$('.two .close').on('click',function(){
+  $(this).parent().animate({
+   top : '-500px'
+  },500);
+  
+  $(this).parent().siblings('.one').animate({
+   top : '0px'
+  },500);
+  return false;
+ });
+});
+
+
+
+
+
+            // Show/hide password onClick of button using Javascript only
+
+// https://stackoverflow.com/questions/31224651/show-hide-password-onclick-of-button-using-javascript-only
+
+function show() {
+    var p = document.getElementById('pwd');
+    p.setAttribute('type', 'text');
+}
+
+function hide() {
+    var p = document.getElementById('pwd');
+    p.setAttribute('type', 'password');
+}
+
+var pwShown = 0;
+
+document.getElementById("eye").addEventListener("click", function () {
+    if (pwShown == 0) {
+        pwShown = 1;
+        show();
+    } else {
+        pwShown = 0;
+        hide();
+    }
+}, false);
+
+
+
+            function getlink() {
+var aux = document.createElement("input");
+aux.setAttribute("value",window.location.href);
+document.body.appendChild(aux);
+aux.select();
+document.execCommand("copy");
+document.body.removeChild(aux);
+}
+  // Also featured on MaterialUp!
+
+// http://www.materialup.com/posts/colourful-flower-popup-menu
+
+
+</script>
+</head>
+<body>
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+    <video src="si.mp4" autoplay="true" muted="true" loop="true" height="780" width="2000"></video>
+    <header>
+        <h1><a href="javascript:location.reload()"><img class="izquierda" src="logotipo.jpg"></a><font face="Script MT">Salud-a la medicina</font><a href="javascript:location.reload()"><img class="derecha" src="logotipo.jpg"></a></h1>
+    <br>
+    <br>  
+    </header>
+    <nav>
+    <ul>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Pantalla%20de%20carga.html">Inicio</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Acerca%20de.html">Acerca de</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Servicios.html">Servicios</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Contacto.html">Contacto</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Inscribirse.html">Registrarse</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <section id="sect2" class="sect">
+<br>
+        <div class="a">
+            <div class="text-container">
+            <h2 class="text-pattern">Salud-a la medicina</h2>
+            </div>
+        </div>
+        <br>
+    </section>
+    <br>
+    <br>
+    <div class="a">
+        <div class="overlay">
+            <!-- LOGN IN FORM by Omar Dsoky -->
+            <form>
+               <!--   con = Container  for items in the form-->
+               <div class="con">
+               <!--     Start  header Content  -->
+               <header class="head-form">
+                  <h2>Registrarse</h2>
+                  <!--     A welcome message or an explanation of the login form -->
+                  <p>Coloque los dstos necesarios</p>
+               </header>
+               <!--     End  header Content  -->
+               <br>
+               <div class="field-set">
+                 
+                  <!--   user name -->
+                     <span class="input-item">
+                       <i class="fa fa-user-circle"></i>
+                     </span>
+                    <!--   user name Input-->
+                     <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+                 
+                  <br>
+                     <!--   user name -->
+                     <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                      </span>
+                     <!--   user name Input-->
+                      <input  type="text" name="nombre" size="30" class="form-input" id="txt-input" type="text" placeholder="Nombre" required>
+                 
+                 <br>     
+                          <!--   user name -->
+                     <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                      </span>
+                     <!--   user name Input-->
+                      <input type="text" name="nombre" size="30" class="form-input" id="txt-input" type="text" placeholder="Primer apellido" required>
+                  <br>
+
+                      <!--   user name -->
+                      <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                      </span>
+                     <!--   user name Input-->
+                      <input type="text" name="nombre" size="30" class="form-input" id="txt-input" type="text" placeholder="Segundo Apellido" required>
+                 <br>
+                     <!--   user name -->
+                     <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                      </span>
+                     <!--   user name Input-->
+                      <input type="email" name="nombre" size="30" class="form-input" id="txt-input" type="text" placeholder="Correo electrónico" required>
+                 <br>
+                          <!--   user name -->
+                     <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                      </span>
+                     <!--   user name Input-->
+                      <input type="text" name="nombre" size="30" class="form-input" id="txt-input" type="text" placeholder="Número de teléfono" required>
+                 <br>
+                          <!--   user name -->
+                     <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                      </span>
+                     <!--   user name Input-->
+                      <input type="number" name="nombre" size="30" class="form-input" id="txt-input" type="text" placeholder="Edad" required>
+                 <br>
+                          <!--   user name -->
+                     <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                      </span>
+                     <!--   user name Input-->
+                      <input type="date" name="nombre" size="30" class="form-input" id="txt-input" type="text" placeholder="Fecha de nacimiento" required>
+                 <br>
+                          <!--   user name -->
+                     <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                      </span>
+                <br>
+                       <!--   Password -->
+                 
+                  <span class="input-item">
+                    <i class="fa fa-key"></i>
+                   </span>
+                  <!--   Password Input-->
+                  <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+                 
+            <!--      Show/hide password  -->
+                 <span>
+                    <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+                 </span>
+                 <br>
+                 <br>
+                 <p class="termino1"><input type="checkbox">  Estoy de acuerdo con <a class="termino2" href="">Terminos y Condiciones</a></p>
+                 <br>
+                  <br>
+            <!--        buttons -->
+            <!--      button LogIn -->
+                  <button class="log-in" onclick="alert('Registrado con éxito');">Iniciar sesión</button>
+               </div>
+              
+            <!--   other buttons -->
+               <div class="other">
+            <!--      Forgot Password button-->
+                  <button class="btn submits frgt-pass">Forgot Password</button>
+            <!--     Sign Up button -->
+                  <button class="btn submits sign-up" onclick="alert('Registrado con éxito');">Sign Up 
+            <!--         Sign Up font icon -->
+                  <i class="fa fa-user-plus" aria-hidden="true"></i>
+                  </button>
+            <!--      End Other the Division -->
+               </div>
+                 
+            <!--   End Conrainer  -->
+              </div>
+              
+              <!-- End Form -->
+            </form>
+            </div>
+
+    </div>
+<br>
+<br>
+  <footer>
+    <div class="a">
+      &copy; 2023 Salud-a la medicina. Todos los derechos reservados.
+      <div class="socialw fadeInDown">  
+
+        <!-- Facebook !-->
+        <a href="https://www.facebook.com/profile.php?id=100010427657246" target="_blank">    
+          <div class="social"><img src="https://i.imgur.com/PY2EPRW.png"/></div>
+        </a>
+        <a href="https://twitter.com/ElizeGod" target="_blank">   
+          <div class="social"> <img src="https://i.imgur.com/ny0pyqt.png"/> </div>
+        </a>
+        <a href="https://www.instagram.com/angi_chiquita/" target="_blank">    
+          <div class="social"> <img src="https://i.imgur.com/tZZG2zQ.png"/></div>
+        </a>
+        </div>
+    </div>
+    </footer>  
+</body>
+</html>

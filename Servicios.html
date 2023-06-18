@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=d150evice-widt250h, 250initial-sc250ale=1.0">
+    <link rel="stylesheet" media="all" href="style2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Servicios de compra</title>
+    <style type="text/css">
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #010866;
+  --color-2: #0f84b6;
+  --color-3: #17fad4;
+}
+
+.title-word-2 {
+  --color-1: #ff7462;
+  --color-2: #ffb039;
+  --color-3: #fcff4f;
+}
+
+.title-word-3 {
+  --color-1: #ff7a8c;
+  --color-2: #ff67c5;
+  --color-3: #da62ff;
+}
+
+.title-word-4 {
+  --color-1: #55ff4f;
+  --color-2: #59ffba;
+  --color-3: #2dbdff;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 30vh
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 8.5vw;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+
+
+
+body {
+	background: #444;
+	margin: 0;
+	font-family: monospace;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+}
+
+/*Estilos de la galeria*/
+
+.galeria {
+	width: 90%;
+	margin: auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria li {
+	margin: 5px;
+}
+
+.galeria img {
+	width: 150px;
+	height: 100px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+	display: none;
+}
+
+.modal:target {
+	
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.imagen {
+	width: 100%;
+	height: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.imagen img {
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	border: 7px solid #fff;
+	box-sizing: border-box;
+}
+
+.cerrar {
+	display: block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
+}
+
+
+
+
+
+
+
+
+        div.a{
+            text-align: center;
+        }
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #26004d;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #26004d;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #26004d;
+      color: #fff;
+    }
+
+    footer{
+  color: #fff;
+  background-color: #26004d;
+  height: 250px
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+ 
+
+ body {  
+   background: #f6f8fa;
+   margin: 0;
+   font-family: 'Quicksand', sans-serif;
+ }
+ .faq-container {    
+   max-width: 800px;
+   margin: 50px auto 0 auto;
+   padding: 2rem;
+ }
+ .faq-container h2 {
+   margin-bottom: 50px;
+   font-size: 2.5rem;
+   font-weight: 600;
+   text-align: center;
+   color: #364f6b;
+ }
+ details { 
+   background-color: #f6f8fa;
+   width: 100%;
+   margin-bottom: 1rem;   
+   border-radius: 8px;  
+   border: 1px solid #d8e0e9;
+   color: #364f6b;
+   position: relative;  
+ }
+ details summary {  
+   font-weight: 400;
+   font-size: 1.25rem;
+   padding: 1rem;
+   cursor: pointer;
+   list-style: none;
+ }
+ details p {
+   padding: 1rem;
+   margin: 0 1rem 1rem 1rem;
+   background: #f6f8fa;
+   border-left: 2px solid #364f6b;
+ }
+ 
+ details:hover,
+ details[open] {
+   box-shadow: 5px 5px 15px #d9d9d9;
+ }
+ 
+ details[open] {
+   background: #ffffff;
+ }
+ 
+ details[open] summary {
+   font-weight: 600;
+ }
+ 
+ details summary::before {
+   position: absolute;
+     content: "👇";    
+     font-size: 1.75rem;
+     top: 10px;
+     right: 16px;  
+ }
+ 
+ details[open] summary::before {
+   -webkit-animation: rotate 0.6s ease-in-out both;
+           animation: rotate-emoji 0.6s ease-in-out both;
+ }
+ 
+ @-webkit-keyframes rotate-emoji {
+   0% {
+     -webkit-transform: rotate(0);
+             transform: rotate(0);
+   }
+   100% {
+     -webkit-transform: rotate(180deg);
+             transform: rotate(180deg);
+   }
+ }
+
+
+
+
+ body {
+  position: relative;
+  margin: 0;
+}
+.sect {
+  width: 40%;
+  min-height: 200px;
+  align-items: center;
+}
+
+#sect1 {
+  background-color: #fffffff5;
+  color: #333;
+  width: 700px;
+  margin: 0 auto;
+}
+
+#sect2 {
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  height: 90px;
+  width: 30%;
+  right: 20px;
+
+}
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+
+
+
+
+img.izquierda {
+  float: left;
+}
+
+img.derecha {
+  float: right;
+}
+
+
+
+
+
+
+
+      body{
+    align-content: center;
+}
+
+.log{
+    background-color: #b0cac3;
+}
+
+.brid{
+    background-color: rgb(255, 255, 255);
+}
+.tit{
+    font-style: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    font-style: unset;
+    
+} 
+
+@font-face {
+    font-family: "ubuntu";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2");
+  }
+  
+  a {
+    text-decoration: none;
+    color: #9ca0b1;
+  }
+  
+  .wrapper {
+    text-align: center;
+  }
+  .wrapper h2 {
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to right, #384208 10%, #798b0f 50%, #384208 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    font-style: oblique;
+    background-color: rgb(53, 63, 206);
+    color: cornflowerblue;
+    font-size: 30px;
+  }
+
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .btn{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #ff7675;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+  }
+
+  
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.raise {
+  --color: #4c1791;
+  --hover: #9d60ff;
+}
+
+button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+/sigue/
+
+.spann{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    color: aliceblue;
+}
+
+.imagen-animada {
+  
+  animation-name: animacion-imagen;
+  animation-duration: 3s; /* ajusta la duración de la animación según tus necesidades */
+  animation-timing-function: ease-in-out; /* ajusta la función de tiempo de la animación según tus necesidades */
+  animation-iteration-count: infinite; /* ajusta el número de repeticiones según tus necesidades */
+}
+
+@keyframes animacion-imagen {
+  0% {
+    transform: scale(1); /* estado inicial */
+  }
+  50% {
+    transform: scale(1.2); /* escala al 120% en la mitad de la animación */
+  }
+  100% {
+    transform: scale(1); /* vuelve al tamaño original al final de la animación */
+  }
+}
+
+.fpsa{
+  color: #fff;
+  box-shadow: azure;
+}
+
+
+
+
+
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+    </style>
+    <script type='text/javascript' language="JavaScript">
+$(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});  
+
+
+
+
+        // Ejemplo de productos predefinidos
+  var productos = [
+    { nombre: 'Tempra', precio: 32.2 },
+    { nombre: 'Paracetamol', precio: 24.2 },
+    { nombre: 'Pepto Bismol', precio: 50.00 },
+    { nombre: 'Aspirina', precio: 36.4 },
+    { nombre: 'Xarelto', precio: 48.7 },
+    { nombre: 'Levonorgestrel', precio: 54.4 },
+    { nombre: 'Treda', precio: 30.9 },
+    { nombre: 'Enterogermina', precio: 49.7 },
+    { nombre: 'Jeringas (bebe)', precio: 16.2 },
+    { nombre: 'Jeringas (adulto)', precio: 19.5 },
+    { nombre: 'Cubrebocas', precio: 5.00 },
+    { nombre: 'Cubrebocas (KN95)', precio: 16.8 },
+    { nombre: 'Guantes de latex', precio: 12.6 },
+    { nombre: 'Ensure', precio: 49.2 },
+    { nombre: 'Vick Vaporub (Gel)', precio: 30.9 },
+    { nombre: 'Vick Vaporub (inhalador)', precio: 23.6 },
+    { nombre: 'Gasas', precio: 10.5 },
+    { nombre: 'Curitas', precio: 3.2 },
+    { nombre: 'Vitamina D', precio: 65.4 },
+    { nombre: 'Leche en polvo Nido', precio: 68.5 }
+ ];
+
+  // Agregar los productos a la lista
+  for (var i = 0; i < productos.length; i++) {
+    var producto = productos[i];
+
+    var li = document.createElement('li');
+    li.innerText = producto.nombre + ' - $' + producto.precio;
+
+    
+    
+
+    var button = document.createElement('button');
+    button.innerText = 'Agregar al carrito';
+    button.addEventListener('click', (function(producto) {
+      return function() {
+        agregarAlCarrito(producto.nombre, producto.precio);
+      };
+    })(producto));
+
+    li.appendChild(button);
+    listaProductos.appendChild(li);
+  }
+
+  function calcularTotalCarrito() {
+    var total = 0;
+  
+    // Recorrer los productos en el carrito y sumar sus precios
+    for (var i = 0; i < carrito.length; i++) {
+      var producto = carrito[i];
+      total += producto.precio;
+    }
+  
+    return total;
+  }
+
+    </script>
+</head>
+<body align="center"> 
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+    <video src="si.mp4" autoplay="true" muted="true" loop="true" height="780" width="2000"></video>
+    <header>
+        <h1><a href="javascript:location.reload()"><img class="izquierda" src="logotipo.jpg"></a><font face="Script MT">Salud-a la medicina</font><a href="javascript:location.reload()"><img class="derecha" src="logotipo.jpg"></a></h1>
+    <br>
+    <br>  
+    </header>
+    <nav>
+    <ul>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Pantalla%20de%20carga.html">Inicio</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Acerca%20de.html">Acerca de</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Servicios.html">Servicios</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Contacto.html">Contacto</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Inscribirse.html">Registrarse</a></li>
+        </ul>
+    </nav>
+    <br>
+    
+    <section id="sect1" class="sect">
+        <div class="a">
+            <div class="faq-container">
+                <div class="container">
+                    <h2 class="title">
+                      <span class="title-word title-word-1">|</span>
+                      <span class="title-word title-word-2">Servicios</span>
+                      <span class="title-word title-word-3">de</span>
+                      <span class="title-word title-word-4">compra</span>
+                    </h2>
+                  </div>
+                  <br>
+                  <details open>
+                    <summary>Propósito</summary>
+                    <p><br>Ofrecemos venta de medicamentos para lograr solventar los gastos de las personas parte de nuestros programas de bienestar. Todo el dinero recaudado será utilizado en fondos beneficiarios.</p>
+                  </details>
+                  <br>
+  <div class="product">
+    <span class="spann">Tempra - $32.2</span><br><br>
+    <img class="imagen-animada" src="tempra.jpeg" width=150 height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(32.2)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Paracetamol - $24.2</span><br><br>
+        <img class="imagen-animada" src="paracetamol.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(24.2)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Pepto Bismol - $50.00</span><br><br>
+    <img class="imagen-animada" src="pepto.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(50)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Aspirina - $36.4</span><br><br>
+        <img class="imagen-animada" src="aspirina.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(36.4)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Xarelto - $48.7</span><br><br>
+        <img class="imagen-animada" src="xarelto.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(48.7)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Levonorgestrel - $54.4</span><br><br>
+        <img class="imagen-animada" src="anticonceptivos.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(54.4)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Treda - $30.9</span><br><br>
+    <img class="imagen-animada" src="treda.jpeg" width="150" height="150"><br><br>    
+    <button class="raise" onclick="agregarProducto(30.9)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Enterogermina - $49.7</span><br><br>
+    <img class="imagen-animada" src="omeprazol.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(49.7)">Agregar al carrito</button>
+  </div><br><br>
+  <!--FW-->
+  <div class="product">
+    <span class="spann">Jeringas (bebe) - $16.2</span><br><br>
+        <img class="imagen-animada" src="jeringa100.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(16.2)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Jeringas (adulto) - $19.5</span><br><br>
+        <img class="imagen-animada" src="jeringas500.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(19.5)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Cubrebocas - $05.00</span><br><br>
+        <img class="imagen-animada" src="cubrebocas.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(5)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Cubrebocas (KN95) - $16.8</span><br><br>
+        <img class="imagen-animada" src="kn95.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(16.8)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Guantes de latex - $12.6</span><br><br>
+        <img class="imagen-animada" src="guantes.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(12.6)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Ensure - $49.2</span><br><br>
+    <img class="imagen-animada" src="ensure.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(49.2)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Vick Vaporub (Gel) - $30.9</span><br><br>
+        <img class="imagen-animada" src="vaprub.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(30.9)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Vick vaporub (inhalador) - $23.6</span><br><br>
+        <img class="imagen-animada" src="vapoinhaler.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(23.6)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Gasas - $10.5</span><br><br>
+<img class="imagen-animada" src="protec.jpeg" width="150" height="150"><br><br>    
+<button class="raise" onclick="agregarProducto(10.5)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Curitas - $03.2</span><br><br>
+        <img class="imagen-animada" src="curitas.jpeg" width="150" height="150"><br><br>
+    <button class="raise" onclick="agregarProducto(3.2)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Vitamina D - $65.4</span><br><br>
+        <img class="imagen-animada" src="vitamina.jpeg" width="150" height="150" ><br><br>
+    <button class="raise" onclick="agregarProducto(65.4)">Agregar al carrito</button>
+  </div><br><br>
+
+  <div class="product">
+    <span class="spann">Leche en polvo Nido -$68.5</span><br><br>
+        <img class="imagen-animada" src="nido.jpeg" width="150" height="150"><br><br> 
+    <button class="raise" onclick="agregarProducto(68.5)">Agregar al carrito</button>
+  </div><br><br><hr class="fpsa"><br>
+
+
+
+
+
+  <div class="cart">
+    <h2 style="color: rgb(0, 0, 0);">Carrito de compras</h2>
+    <ul style="align-content: left; color: rgb(0, 0, 0);" id="cart-items"></ul>
+    <p style="color: rgb(0, 0, 0);" id="total">Total: $0</p>
+  </div><br><br>
+            </div>
+</section>
+<br>
+    <br>
+    <footer>
+        <div class="a">
+            <br>
+          &copy; 2023 Salud-a la medicina. Todos los derechos reservados.
+          <div class="socialw fadeInDown">  
+    
+            <!-- Facebook !-->
+            <a href="https://www.facebook.com/profile.php?id=100010427657246" target="_blank">    
+              <div class="social"><img src="https://i.imgur.com/PY2EPRW.png"/></div>
+            </a>
+            <a href="https://twitter.com/ElizeGod" target="_blank">   
+              <div class="social"> <img src="https://i.imgur.com/ny0pyqt.png"/> </div>
+            </a>
+            <a href="https://www.instagram.com/angi_chiquita/" target="_blank">    
+              <div class="social"> <img src="https://i.imgur.com/tZZG2zQ.png"/></div>
+            </a>
+    
+            </div>
+        </div>
+        </footer>  
+<script>
+  var carrito = [];
+    var total = 0;
+
+    function agregarProducto(precio) {
+      carrito.push(precio);
+      total += precio;
+
+      var cartItems = document.getElementById('cart-items');
+      var item = document.createElement('li');
+      item.textContent = 'Producto - $' + precio;
+      cartItems.appendChild(item);
+
+      var totalElement = document.getElementById('total');
+      totalElement.textContent = 'Total: $' + total;
+    }
+</script>
+
+  </body>
+</html>

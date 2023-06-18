@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contacto</title>
+    <link rel="stylesheet" media="all" href="style2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 30vh
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 8.5vw;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+
+
+
+body {
+	background: #444;
+	margin: 0;
+	font-family: monospace;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+}
+
+/*Estilos de la galeria*/
+
+.galeria {
+	width: 90%;
+	margin: auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria li {
+	margin: 5px;
+}
+
+.galeria img {
+	width: 150px;
+	height: 100px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+	display: none;
+}
+
+.modal:target {
+	
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.imagen {
+	width: 100%;
+	height: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.imagen img {
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	border: 7px solid #fff;
+	box-sizing: border-box;
+}
+
+.cerrar {
+	display: block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
+}
+
+
+
+
+
+
+
+
+        div.a{
+            text-align: center;
+        }
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #26004d;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #26004d;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #26004d;
+      color: #fff;
+    }
+
+    footer{
+  color: #fff;
+  background-color: #26004d;
+  height: 250px
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+ 
+
+ body {  
+   background: #f6f8fa;
+   margin: 0;
+   font-family: 'Quicksand', sans-serif;
+ }
+ .faq-container {    
+   max-width: 800px;
+   margin: 50px auto 0 auto;
+   padding: 2rem;
+ }
+ .faq-container h2 {
+   margin-bottom: 50px;
+   font-size: 2.5rem;
+   font-weight: 600;
+   text-align: center;
+   color: #364f6b;
+ }
+ details { 
+   background-color: #f6f8fa;
+   width: 100%;
+   margin-bottom: 1rem;   
+   border-radius: 8px;  
+   border: 1px solid #d8e0e9;
+   color: #364f6b;
+   position: relative;  
+ }
+ details summary {  
+   font-weight: 400;
+   font-size: 1.25rem;
+   padding: 1rem;
+   cursor: pointer;
+   list-style: none;
+ }
+ details p {
+   padding: 1rem;
+   margin: 0 1rem 1rem 1rem;
+   background: #f6f8fa;
+   border-left: 2px solid #364f6b;
+ }
+ 
+ details:hover,
+ details[open] {
+   box-shadow: 5px 5px 15px #d9d9d9;
+ }
+ 
+ details[open] {
+   background: #ffffff;
+ }
+ 
+ details[open] summary {
+   font-weight: 600;
+ }
+ 
+ details summary::before {
+   position: absolute;
+     content: "👇";    
+     font-size: 1.75rem;
+     top: 10px;
+     right: 16px;  
+ }
+ 
+ details[open] summary::before {
+   -webkit-animation: rotate 0.6s ease-in-out both;
+           animation: rotate-emoji 0.6s ease-in-out both;
+ }
+ 
+ @-webkit-keyframes rotate-emoji {
+   0% {
+     -webkit-transform: rotate(0);
+             transform: rotate(0);
+   }
+   100% {
+     -webkit-transform: rotate(180deg);
+             transform: rotate(180deg);
+   }
+ }
+
+
+
+
+ body {
+  position: relative;
+  margin: 0;
+}
+.sect {
+  width: 100%;
+  min-height: 200px;
+}
+
+#sect1 {
+  background-color: #ffffffd0;
+  color: #333;
+}
+
+#sect2 {
+  background-color: rgba(255, 255, 255, 0.49);
+  color: #333;
+  height: 90px;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+
+
+
+
+img.izquierda {
+  float: left;
+}
+
+img.derecha {
+  float: right;
+}
+
+    </style>
+    <script language="JavaScript" type='text/javascript'>
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+    </script>
+</head>
+<body>
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <video src="si.mp4" autoplay="true" muted="true" loop="true" height="780" width="2000"></video>
+    <header>
+        <h1><a href="javascript:location.reload()"><img class="izquierda" src="logotipo.jpg"></a><font face="Script MT">Salud-a la medicina</font><a href="javascript:location.reload()"><img class="derecha" src="logotipo.jpg"></a></h1>
+    <br>
+    <br>  
+    </header>
+    <nav>
+    <ul>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Pantalla%20de%20carga.html">Inicio</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Acerca%20de.html">Acerca de</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Servicios.html">Servicios</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Contacto.html">Contacto</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Inscribirse.html">Registrarse</a></li>
+        </ul>
+    </nav>
+    <br>
+    <section id="sect1" class="sect">
+        <div class="a">
+            <div class="faq-container">
+                <div class="container">
+                    <h2 class="title">
+                      <span class="title-word title-word-1">|</span>
+                      <span class="title-word title-word-2">Datos</span>
+                      <span class="title-word title-word-3">de</span>
+                      <span class="title-word title-word-4">contacto</span>
+                    </h2>
+                  </div>
+                <details open>
+                <summary>Nombre de la escuela.</summary>
+                <p><br>Colegio de Estudios Científicos y Tecnológicos del Estado de México. Plantel Coacalco.</p>
+              </details>
+              
+              <details>
+                <summary>Dirección.</summary>
+                <p><br>Enrique Rebsamen s/n, Col. El Gigante, Coacalco de Berriozabal, Estado de México, C.P. 55709</p>
+              </details>
+                
+                <details>
+                <summary>Correo electrónico.</summary>
+                <p><br>plantel.coacalco@cecytem.mx</p>
+              </details>
+                
+                <details>
+                <summary>Teléfono.</summary>
+                <p><br>(55) 15 48 91 98</p>
+              </details>
+                
+                <details>
+                <summary>CCT</summary>
+                <p><br>15ETC0011O</p>
+              </details>
+           
+	<br>
+        <svg viewBox="0 0 960 300">
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">Ubicación</text>>
+          </symbol>
+      
+          <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+          </g>
+        </svg>
+      </div>
+    <br>
+    <br>
+    <iframe class="ifr"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.134886808458!2d-99.10348862587037!3d19.62153023462227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f155328c3bcb%3A0xff807e7e5824b155!2sCECyTEM%20Plantel%20Coacalco!5e0!3m2!1ses-419!2smx!4v1684625321179!5m2!1ses-419!2smx"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br><br>
+<iframe width="560" height="315" src="video1.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<br>
+            </div>
+    </section>
+    <br>
+    <br>
+    <footer>
+        <div class="a">
+            <br>
+          &copy; 2023 Salud-a la medicina. Todos los derechos reservados.
+          <div class="socialw fadeInDown">  
+    
+            <!-- Facebook !-->
+            <a href="https://www.facebook.com/profile.php?id=100010427657246" target="_blank">    
+              <div class="social"><img src="https://i.imgur.com/PY2EPRW.png"/></div>
+            </a>
+            <a href="https://twitter.com/ElizeGod" target="_blank">   
+              <div class="social"> <img src="https://i.imgur.com/ny0pyqt.png"/> </div>
+            </a>
+            <a href="https://www.instagram.com/angi_chiquita/" target="_blank">    
+              <div class="social"> <img src="https://i.imgur.com/tZZG2zQ.png"/></div>
+            </a>
+    
+            </div>
+        </div>
+        </footer>  
+</body>
+</html>

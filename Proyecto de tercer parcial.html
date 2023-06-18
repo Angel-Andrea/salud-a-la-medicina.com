@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Salud-a la medicina</title>
+    <link rel="stylesheet" media="all" href="style2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<style type="text/css">
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #26004d;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #26004d;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #26004d;
+      color: #fff;
+    }
+
+    footer{
+  color: #fff;
+  background-color: #26004d;
+  height: 250px
+}
+
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+ 
+
+body {  
+  background: #f6f8fa;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+.faq-container {    
+  max-width: 800px;
+  margin: 50px auto 0 auto;
+  padding: 2rem;
+}
+.faq-container h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #364f6b;
+}
+details { 
+  background-color: #f6f8fa;
+  width: 100%;
+  margin-bottom: 1rem;   
+  border-radius: 8px;  
+  border: 1px solid #d8e0e9;
+  color: #364f6b;
+  position: relative;  
+}
+details summary {  
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+details p {
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  background: #f6f8fa;
+  border-left: 2px solid #364f6b;
+}
+
+details:hover,
+details[open] {
+  box-shadow: 5px 5px 15px #d9d9d9;
+}
+
+details[open] {
+  background: #ffffff;
+}
+
+details[open] summary {
+  font-weight: 600;
+}
+
+details summary::before {
+  position: absolute;
+    content: "👇";    
+    font-size: 1.75rem;
+    top: 10px;
+    right: 16px;  
+}
+
+details[open] summary::before {
+  -webkit-animation: rotate 0.6s ease-in-out both;
+          animation: rotate-emoji 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-emoji {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+
+
+img.izquierda {
+  float: left;
+}
+
+img.derecha {
+  float: right;
+}
+
+
+
+div.a{
+    text-align: center;
+}
+
+
+
+body {
+  position: relative;
+  margin: 0;
+}
+.sect {
+  width: 100%;
+  min-height: 200px;
+}
+
+#sect1 {
+  background-color: #ffffff8a;
+  color: #333;
+}
+
+#sect2 {
+  background-color: rgba(255, 255, 255, 0.49);
+  color: #333;
+  height: 90px;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+h1 {
+  margin: 0;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+h2 {
+  margin: 0;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body {  
+  background-color: HoneyDew;
+  font-family: 'Fredoka One', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.text-container h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+.text-container .text-pattern {  
+  color: transparent;
+  background-color: #240863;
+  background-image: repeating-linear-gradient(45deg,    transparent, transparent 25px,        rgba(67, 49, 236, 0.5) 25px, rgba(255,255,255,.5) 50px);
+   -webkit-background-clip: text;
+    background-clip: text;   
+  animation: color 50s linear infinite; 
+  background-size: 200%;  
+  -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+@keyframes color {
+  from { 
+    background-position: 0% 50%;
+  }
+  to { 
+    background-position: 100% 50%; 
+  }
+}
+
+
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+
+
+hr {border: 0;
+    height: 24px; 
+    box-shadow: inset 0 22px 12px -12px rgb(24, 2, 104); 
+    color: rgb(24, 2, 104); 
+    text-align: center;
+}
+hr:after {
+    content:"\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605"; 
+    font-size: 14px;
+    color: #eee;
+    }
+
+
+
+
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  border: 1px solid rgb(3, 0, 10);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border: 1px solid #21004d;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #7573ff;
+}
+</style>
+<script language="JavaScript" type='text/javascript'>
+     function mostrarInformacion() {
+      var informacionDiv = document.getElementById("informacion");
+      if (informacionDiv.style.display === "none") {
+        informacionDiv.style.display = "block";
+      } else {
+        informacionDiv.style.display = "none";
+      }
+    }
+
+
+    $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+</head>
+<body>
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+    <video src="si.mp4" autoplay="true" muted="true" loop="true" height="780" width="2000"></video>
+    <header>
+        <h1><a href="javascript:location.reload()"><img class="izquierda" src="logotipo.jpg"></a><font face="Script MT">Salud-a la medicina</font><a href="javascript:location.reload()"><img class="derecha" src="logotipo.jpg"></a></h1>
+    <br>
+    <br>  
+    </header>
+    <nav>
+    <ul>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Pantalla%20de%20carga.html">Inicio</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Acerca%20de.html">Acerca de</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Servicios.html">Servicios</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Contacto.html">Contacto</a></li>
+    <li><a href="file:///E:/Proyecto%20tercer%20parcial/Inscribirse.html">Registrarse</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <section id="sect2" class="sect">
+<br>
+        <div class="a">
+            <div class="text-container">
+            <h2 class="text-pattern">Salud-a la medicina</h2>
+            </div>
+        </div>
+        <br>
+    </section>
+    <br>
+    <br>
+    <div class="a">
+    <section id="sect1" class="sect">
+        <h2><font face="Times New Roman">CARENCIA POR ACCESO A LOS SERVICIOS DE SALUD</font></h2>
+        <br>
+        <br>
+    <details>
+        <summary>Tabla de contenidos</summary>
+        <video src="video 2.mp4" width="420"  height="240"></video>
+            <ul>
+            <li><a href="#con" class="ocultar-visualmente2">Problemática a tratar.</a></li>
+            <li><a href="#prop" class="ocultar-visualmente2">Nuestra visión.</a></li>
+            <li><a href="#service" class="ocultar-visualmente2">Nuestros servicios.</a></li>
+            <li><a href="#hospital" class="ocultar-visualmente2">Hospitales cercanos.</a></li>
+            </ul>
+      </details>
+    </section>
+</div>
+<br>
+<br>
+<br>
+<section id="sect1" class="sect">
+<div class="a">
+<hr/>
+<div id="con">
+    <p><FONT COLOR="#66002A" size="6"><font face="Monospace">La problemática a tratar.</font></FONT></p>
+    <div>
+        <br>
+        <img class="izquierda" src="img1.jpg" height="250" width="250">
+        <br>
+ <p><br>Informar sobre las necesidades de una población es ahora un tema complejo incluso la infraestructura de la comunidad y sin las diferentes clases sociales,</p>
+<p>porque no todas las personas tienen las mismas oportunidades para cumplir sus necesidades básicas, como buena comida, acceso a la educación, entre muchos otros.</p>
+<p>En este caso, hablaremos sobre la falta de acceso a los servicios de salud en nuestra comunidad de Coacalco,ya que, aunque hay hospitales, clínicas y farmacias en la</p>
+<p>comunidad, algunas personas (por decir una gran parte de ellos) no disfrutan de todos los servicios de salud. Ya sea por la baja calidad de los servicios estatales, la</p>
+<p>sobrepoblación, la desinformación y la economía de los individuos. Esta lista podría seguir, es decir, el propósito de esta página.</p>
+<br>
+<p>La marginacion es un fenómeno multidimensional y estructural que se origina, al final, por el modelo de producción económica expresado en la distribución del</p>
+<p>progreso que no es igual, en estructuras productivas y en la excepción de varios grupos sociales, tanto el proceso como los beneficios de desarrollo, como así</p>
+<p>como relacionado con la falta de oportunidades sociales y no la existencia de la capacidad de obtenerla o producirla, pero también para la privación y los bienes</p>
+<p>y servicios fundamentales inaccesibles para el bienestar.</p>
+
+<p>Según Data Conval, durante 2020 Coacalco de Berriozábal había 83,272 personas en pobreza moderada (26.1% de la poblacion total), 31,135 personas en pobreza y</p>
+<p>7.863 personas en extrema pobreza (2.47%) de la poblacion.</p>
+<p>La población vulnerable por carencias sociales alcanzó un 21.5%, mientras que la población vulnerable por ingresos fue de 14.1%. Las principales carencias</p>
+<p>sociales de Coacalco de Berriozábal en 2020 fueron carencia por acceso a la seguridad social,  carencia por acceso a los servicios de salud y carencia por</p>
+<p>acceso a la alimentación.</p>
+<br>
+<br>
+<p>En Coacalco de Berriozábal, las opciones de atención de salud más utilizadas en 2020 fueron IMSS (Seguro social) (146k), Otro lugar (62.2k)</p>
+<p>y Consultorio de farmacia (34.4k). En el mismo año, los seguros sociales que agruparon mayor número de personas fueron Seguro Popular o para una</p>
+<p>Nueva Generación (Siglo XXI) (172k) y No Especificado (68.4k).</p>
+<br>
+<br>
+<img src="imagen1.jpg" height="550" width="550">
+<br>
+<br>
+</div>
+</section>
+<br>
+<br>
+<section id="sect1" class="sect">
+    <hr/>
+    <div class="a">
+    <div id="prop">
+    <p><FONT COLOR="blue" size="6"><font face="Times New Roman">Nuestra visión.</font></FONT></p>
+    <br>
+    <img src="imagen2.jpg" height="100" width="100">
+    <br>
+    <p><br>Somos una fundación que buscan promover y otorgar mejores oportunidades a su comunidad, mejores servicios para la población
+    y aunado a eso, ayudar a las personas que no cuentan con el dinero suficiente para solventar sus gastos médicos.En "Salud-a la medicina" tenemos la meta de contribuir a la transformación de los servicios de salud en lo más posible, planteamos modelos de apoyo y desarrollo
+    basados en la salud de los más necesitados. Realizamos programas de salud encaminados a generar soluciones que ayuden a resolver los problemas 
+    de las partes de la población que se encuentran más desprotegidas. 
+    <br>
+    <p><br>No somos una fundación con fines de lucro, en realidad ayudamos al resto de la población mediante el uso de donaciones por parte
+    de la comunidad y por medio de la venta de medicamentos a las personas que puedan pagarlos. Tenemos en cuenta las posibilidades de
+    las personas y es por eso que otorgamos una ayuda económica junto a servicios básicos para la salud. Nos hemos propuesto a realizar dichas actividades como parte del propósito de mejorar nuestra comunnidad, nuestro estado, 
+    nuestro país y poco a poco la calidad del mundo mediante pequeñas acciones. Queremos que al menos nuestra comunidad esté llena
+    de personas que gocen de un bienestar en su totalidad sin importar su etnia, condición económica, género o edad.</p>
+    <p><br>Consideramos en que la salud es un tema importante a tratar para cada país, sin embargo, no en todos los lugares ni a todas las
+    personas se les da la oportunidad de disfrutar de este derecho universal. Nos preocupamos por concientizar que la salud, el higiene y 
+    la nutrición es primordial para las personas.</p>
+    <br>
+    <br>
+    <img src="imagen3.jpg" height="700" width="700">
+    <br>
+    <br>
+    </div>
+    </div>
+</section>
+<br>
+<br>
+<section id="sect1" class="sect">
+    <hr/>
+    <div class="a">
+    <div id="service">
+    <p><FONT COLOR="#128200" size="6"><font face="Lucida Handwriting">Nuestros servicios.</font></FONT></p>
+    <br>
+    <img src="imagen4.jpg" height="150" width="150">
+    <br>
+    <p><br>A fin de ofrecer una mejor calidad de vida para las personas, ofrecemos servicios amigables para la comunidad.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table class="table" >
+        <tr>
+          <th>Servicio.</th>
+          <th>Beneficiarios.</th>
+          <th>Clasificación.</th>
+          <th>Concepto.</th>
+          <th>Descipción.</th>
+        </tr>
+        <tr>
+          <td>Pediatria.</td>
+          <td>Infantes de 3-12 años.</td>
+          <td>Servicio escencial.</td>
+          <td>Dispensación de medicamentos.</td>
+          <td>Dispensación de medicamentos y productos necesarios para el cuidado de los niños.</td>
+        </tr>
+        <tr>
+          <td>Apoyo para mujeres embarazadas y maternidad.</td>
+          <td>Mujeres desde el primer mes de embarazo y a recién nacidos.</td>
+          <td>Servicio escencial.</td>
+          <td>Indicación farmacéutica.</td>
+          <td>Información antes y despues de parto. Dispensación de productos necesarios para la madre y para el hijo.</td>
+        </tr>
+          <tr>
+          <td>Salud reproductiva.</td>
+          <td>Adolescentes, jovenes y adultos sin distinción de sexo.</td>
+          <td>Servicio complementario.</td>
+          <td>Información y soporte al cuidado.</td>
+          <td>Programas de detección de cancer en zonas reproductivas, información y distribución de anticonceptivos.</td>
+        </tr>
+        <tr>
+            <td>Servicios para personas de la tercera edad.</td>
+            <td>Adultos mayores.</td>
+            <td>Servicio escencial.</td>
+            <td>Programas especificos de salud pública.</td>
+            <td>Detección de patologías. Factores de riesgo cardiovascular. Dispensación de medicamentos.</td>
+          </tr>
+          <tr>
+            <td>Nutrición general.</td>
+            <td>Todo tipo de personas.</td>
+            <td>Servicio escencial.</td>
+            <td>Programas especificos de salud pública.</td>
+            <td>Control e información sobre suplementos. IMC. Revisión constante e información personalizada del medicamento.</td>
+          </tr>
+      </table>
+    </div>
+    <audio controls>
+        <source src="audio1.mp3" type="audio/mp3">
+            Tu navegador no soporta audio HTML5.
+    </audio>
+    </div>
+    <br>
+    <br>
+    <img src="imagen5.jpg" height="350" width="350" align="center">
+</section>
+</section>
+<br>
+<br>
+<section id="sect1" class="sect">
+    <hr/>
+    <div class="a">
+    <div id="hospital">
+    <p><FONT COLOR="#3F0082" size="6"><font face="Bodoni MT">Hospitales cercanos.</font></FONT></p>
+    <br>
+    <br>
+    <img src="imagen6.jpg" height="380" width="380">
+    <br>
+    <br>
+<p>A continuación, mostraremos algunas de las mejores clinicas y hospitales de Coacalco de Berriozabal para que se conozca el lugar al cual acudir.</p>
+<br>
+<p>Clinica Rolosa - Coacalco de Berriozábal</p>
+<p>Eje 8 256 1, La Magdalena Huizachitla. Coacalco de Berriozábal. México.</p>
+<p>Servicio Medico Quirurgico. Coloscopia. Servicio de Hospitalizacion. Endoscopia. Ginecologia y Obstetricia.</p>
+<br>   
+<p>2 - Clinica Integral Materno Infantil - Coacalco de Berriozábal</p>
+<p>Eje 8 Carlos Pichardo 182, Sta Ma Magdalena. Coacalco de Berriozábal. México.</p>
+<p>Hospitalizacion. prestamos servicio a domicilio. Ginecologia. Pediatria. Quirofano. Nutriologia. Medicina General.</p>
+<br>
+<p>3 - Central de Especialidades Medicas Coacalco SA de CV - Coacalco de Berriozábal</p>
+<p>Jose Lopez Bonaga 26 Sec. A, San Lorenzo. Coacalco de Berriozábal. México.</p>
+<p>Matografia. Tomografia Nsg. Obstetricia y Ginecologia. Cirugia Interna. Aceptamos Gastos de aseguradoras.Cuidados Intensivos.</p>
+<br>
+<p>4 - Clinica Rolosa - Coacalco de Berriozábal</p>
+<p>8 256 A, La Magdalena Huizachitla. Coacalco de Berriozábal. México.</p>
+<p>Medicina Interna. Medicina General. prestamos servicio a domicilio. Ginecologia. Pedriatria. Cardiologia.</p>
+<br> 
+<p>5 - Clinica Vayesi - Coacalco de Berriozábal</p>
+<p>Boulevard de las Rosas 382, Villa de las Flores. Coacalco de Berriozábal. México.</p>
+<p>Reductivos. Centro de Masajes. . prestamos servicio a domicilio. . Terapeuticos Esteticos Y. Planificacion Familiar. Pediatria.</p>
+<br>
+<p>6 - Clinica Medica Futura - Coacalco de Berriozábal</p>
+<p>Enrique Millan Cejudo 263, Unidad San Rafael. Coacalco de Berriozábal. México.</p>
+<p>Maternidad. Urgencias. Enfermeria. Quirofano. Cafeteria.</p>
+<br>
+<p>7 - Centro de Especialidades Medicas Coacalco - Coacalco de Berriozábal</p>
+<p>Coacalco 137, Villa de las Flores 2da Seccion. Coacalco de Berriozábal. México.</p>
+<p>Hospitalizacion. Analisis Clinicos. Laboratorio. Ultrasonido. Rayos X.</p>
+<br>
+<p>8 - Armonizate - Coacalco de Berriozábal</p>
+<p>Zarzaparrillas 477, Villa de las Flores 2a Secc. Coacalco de Berriozábal. México.</p>
+<p>Gastritis. Colitis. Hipertension. Nutricion. Insomnio. Nervios.</p>
+<br>
+<p>9 - Central de Especialidades Medicas Coacalco - Coacalco de Berriozábal</p>
+<p>Jose Lopez Bonaga 26, San Lorenzo Tetlixtac. Coacalco de Berriozábal. México.</p>
+<br>
+<br>
+<br>
+<iframe src="https://www.google.com/maps/d/embed?mid=1jIBZCIYZYk4lIIS3RdZ4Ahgoouy2Bxs&ehbc=2E312F" width="640" height="480"></iframe>
+<br>
+<br>
+<br>
+<audio controls>
+    <source src="audio2.mp3" type="audio/mp3">
+        Tu navegador no soporta audio HTML5.
+</audio>
+</div>
+    </div>
+    </div>
+    <br>
+    <br>
+</section>
+<br>
+<br>
+  <footer>
+    <div class="a">
+      &copy; 2023 Salud-a la medicina. Todos los derechos reservados.
+      <div class="socialw fadeInDown">  
+
+        <!-- Facebook !-->
+        <a href="https://www.facebook.com/profile.php?id=100010427657246" target="_blank">    
+          <div class="social"><img src="https://i.imgur.com/PY2EPRW.png"/></div>
+        </a>
+        <a href="https://twitter.com/ElizeGod" target="_blank">   
+          <div class="social"> <img src="https://i.imgur.com/ny0pyqt.png"/> </div>
+        </a>
+        <a href="https://www.instagram.com/angi_chiquita/" target="_blank">    
+          <div class="social"> <img src="https://i.imgur.com/tZZG2zQ.png"/></div>
+        </a>
+
+        </div>
+    </div>
+    </footer>  
+</body>
+</html>
